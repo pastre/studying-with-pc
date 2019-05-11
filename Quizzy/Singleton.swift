@@ -15,21 +15,29 @@ class PerguntaProvider{
     let perguntas: [Pergunta] = {
         
         var perguntas:[Pergunta] = [Pergunta]()
-        let titulos: [String] = ["a", "b", "c", "d"]
-        let respostas: [[String]] = [["a", "b", "c", "d"], ["a1", "b1", "c1", "d1"], ["a2", "b2", "c2", "d2"], ["a3", "b3", "c3", "d3"], ]
-        
-        for (i, titulo) in titulos.enumerated(){
-            let resp: [String] = respostas[i]
-            let p: Pergunta = Pergunta(titulo: titulo, respostas: resp, rightIndex: i)
-            
-            perguntas.append(p)
+//        let titulos: [String] = ["a", "b", "c", "d"]
+//        let respostas: [[String]] = [["a", "b", "c", "d"], ["a1", "b1", "c1", "d1"], ["a2", "b2", "c2", "d2"], ["a3", "b3", "c3", "d3"], ]
+    
+        if let path = Bundle.main.path(forResource: "dump", ofType: "json") { // TODO: Mudar esse nome
+            do {
+                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+                let dicts = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves) as! NSArray
+                for anyDict in dicts{
+                    let dict = anyDict as! [String : Any]
+                    let toAppend = Pergunta(titulo: dict["titulo"] as! String, respostas: dict["respostas"] as! [String], rightIndex: dict["rightIndex"] as! Int)
+                    perguntas.append(toAppend)
+                }
+            } catch let error{
+                print("Error loading movies", error)
+                // handle error
+            }
         }
-        
         return perguntas
     }()
     
     var jaMostrou: [Pergunta]!
     var aindaNaoMostrou: [Pergunta]!
+    var acertadas: Int!
     
     private init(){
         self.setupSingleton()
@@ -54,6 +62,7 @@ class PerguntaProvider{
     
     func setupSingleton(){
         self.jaMostrou = [Pergunta]()
+        self.acertadas = 0
         self.aindaNaoMostrou = self.perguntas
         // Colocar coisas que podem ser legais aqui
         

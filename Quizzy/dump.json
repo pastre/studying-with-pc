@@ -1,0 +1,502 @@
+[
+    {
+        "titulo": "The Harvard architecture for micro-controllers added which additional bus?",
+        "respostas": [
+            "Instruction",
+            "Data",
+            "Address",
+            "Control"
+        ],
+        "rightIndex": 0
+    },
+    {
+        "titulo": "In any programming language, what is the most common way to iterate through an array?",
+        "respostas": [
+            "'For' loops",
+            "'Do-while' loops",
+            "'If' Statements",
+            "'While' loops"
+        ],
+        "rightIndex": 0
+    },
+    {
+        "titulo": "What does CPU stand for?",
+        "respostas": [
+            "Central Processing Unit",
+            "Central Processor Unit",
+            "Computer Personal Unit",
+            "Central Process Unit"
+        ],
+        "rightIndex": 0
+    },
+    {
+        "titulo": "According to the International System of Units, how many bytes are in a kilobyte of RAM?",
+        "respostas": [
+            "1000",
+            "1024",
+            "512",
+            "500"
+        ],
+        "rightIndex": 0
+    },
+    {
+        "titulo": "What was the name of the security vulnerability found in Bash in 2014?",
+        "respostas": [
+            "Stagefright",
+            "Bashbug",
+            "Shellshock",
+            "Heartbleed"
+        ],
+        "rightIndex": 2
+    },
+    {
+        "titulo": "What does GHz stand for?",
+        "respostas": [
+            "Gigahotz",
+            "Gigahatz",
+            "Gigahetz",
+            "Gigahertz"
+        ],
+        "rightIndex": 3
+    },
+    {
+        "titulo": "What does AD stand for in relation to Windows Operating Systems? ",
+        "respostas": [
+            "Alternative Drive",
+            "Active Department",
+            "Active Directory",
+            "Automated Database"
+        ],
+        "rightIndex": 2
+    },
+    {
+        "titulo": "When was the programming language \"C#\" released?",
+        "respostas": [
+            "2000",
+            "1999",
+            "1998",
+            "2001"
+        ],
+        "rightIndex": 0
+    },
+    {
+        "titulo": "What amount of bits commonly equals one byte?",
+        "respostas": [
+            "1",
+            "64",
+            "8",
+            "2"
+        ],
+        "rightIndex": 2
+    },
+    {
+        "titulo": "On which computer hardware device is the BIOS chip located?",
+        "respostas": [
+            "Graphics Processing Unit",
+            "Central Processing Unit",
+            "Hard Disk Drive",
+            "Motherboard"
+        ],
+        "rightIndex": 3
+    },
+    {
+        "titulo": "Which of the following languages is used as a scripting language in the Unity 3D game engine?",
+        "respostas": [
+            "C++",
+            "Java",
+            "Objective-C",
+            "C#"
+        ],
+        "rightIndex": 3
+    },
+    {
+        "titulo": "All of the following programs are classified as raster graphics editors EXCEPT:",
+        "respostas": [
+            "GIMP",
+            "Adobe Photoshop",
+            "Inkscape",
+            "Paint.NET"
+        ],
+        "rightIndex": 2
+    },
+    {
+        "titulo": "The computer OEM manufacturer Clevo, known for its Sager notebook line, is based in which country?",
+        "respostas": [
+            "United States",
+            "Taiwan",
+            "China (People's Republic of)",
+            "Germany"
+        ],
+        "rightIndex": 1
+    },
+    {
+        "titulo": "Nvidia's headquarters are based in which Silicon Valley city?",
+        "respostas": [
+            "Palo Alto",
+            "Cupertino",
+            "Santa Clara",
+            "Mountain View"
+        ],
+        "rightIndex": 2
+    },
+    {
+        "titulo": "What is the most preferred image format used for logos in the Wikimedia database?",
+        "respostas": [
+            ".jpeg",
+            ".gif",
+            ".png",
+            ".svg"
+        ],
+        "rightIndex": 3
+    },
+    {
+        "titulo": "What was the first commerically available computer processor?",
+        "respostas": [
+            "Intel 486SX",
+            "Intel 4004",
+            "AMD AM386",
+            "TMS 1000"
+        ],
+        "rightIndex": 1
+    },
+    {
+        "titulo": "In web design, what does CSS stand for?",
+        "respostas": [
+            "Counter Strike: Source",
+            "Cascading Style Sheet",
+            "Corrective Style Sheet",
+            "Computer Style Sheet"
+        ],
+        "rightIndex": 1
+    },
+    {
+        "titulo": "What is the domain name for the country Tuvalu?",
+        "respostas": [
+            ".tt",
+            ".tv",
+            ".tu",
+            ".tl"
+        ],
+        "rightIndex": 1
+    },
+    {
+        "titulo": "The internet domain .fm is the country-code top-level domain for which Pacific Ocean island nation?",
+        "respostas": [
+            "Marshall Islands",
+            "Micronesia",
+            "Fiji",
+            "Tuvalu"
+        ],
+        "rightIndex": 1
+    },
+    {
+        "titulo": "Generally, which component of a computer draws the most power?",
+        "respostas": [
+            "Processor",
+            "Video Card",
+            "Power Supply",
+            "Hard Drive"
+        ],
+        "rightIndex": 1
+    },
+    {
+        "titulo": "How many cores does the Intel i7-6950X have?",
+        "respostas": [
+            "4",
+            "8",
+            "12",
+            "10"
+        ],
+        "rightIndex": 3
+    },
+    {
+        "titulo": "Which one of these is not an official development name for a Ubuntu release?",
+        "respostas": [
+            "Mystic Mansion",
+            "Utopic Unicorn",
+            "Wily Werewolf",
+            "Trusty Tahr"
+        ],
+        "rightIndex": 0
+    },
+    {
+        "titulo": "In the server hosting industry IaaS stands for...",
+        "respostas": [
+            "Internet as a Service",
+            "Infrastructure as a Server",
+            "Infrastructure as a Service",
+            "Internet and a Server"
+        ],
+        "rightIndex": 2
+    },
+    {
+        "titulo": "On Twitter, what is the character limit for a Tweet?",
+        "respostas": [
+            "160",
+            "100",
+            "140",
+            "120"
+        ],
+        "rightIndex": 2
+    },
+    {
+        "titulo": "What port does HTTP run on?",
+        "respostas": [
+            "23",
+            "80",
+            "53",
+            "443"
+        ],
+        "rightIndex": 1
+    },
+    {
+        "titulo": "In HTML, which non-standard tag used to be be used to make elements scroll across the viewport?",
+        "respostas": [
+            "<marquee></marquee>",
+            "<move></move>",
+            "<scroll></scroll>",
+            "<slide></slide>"
+        ],
+        "rightIndex": 0
+    },
+    {
+        "titulo": "In CSS, which of these values CANNOT be used with the \"position\" property?",
+        "respostas": [
+            "center",
+            "absolute",
+            "relative",
+            "static"
+        ],
+        "rightIndex": 0
+    },
+    {
+        "titulo": "Which of these was the name of a bug found in April 2014 in the publicly available OpenSSL cryptography library?",
+        "respostas": [
+            "Corrupted Blood",
+            "Heartbleed",
+            "Shellshock",
+            "Shellscript"
+        ],
+        "rightIndex": 1
+    },
+    {
+        "titulo": "In \"Hexadecimal\", what color would be displayed from the color code? \"#00FF00\"?",
+        "respostas": [
+            "Yellow",
+            "Red",
+            "Blue",
+            "Green"
+        ],
+        "rightIndex": 3
+    },
+    {
+        "titulo": "Which computer language would you associate Django framework with?",
+        "respostas": [
+            "Java",
+            "Python",
+            "C++",
+            "C#"
+        ],
+        "rightIndex": 1
+    },
+    {
+        "titulo": "Which of these programming languages is a low-level language?",
+        "respostas": [
+            "Pascal",
+            "Python",
+            "Assembly",
+            "C#"
+        ],
+        "rightIndex": 2
+    },
+    {
+        "titulo": "In computing terms, typically what does CLI stand for?",
+        "respostas": [
+            "Command Line Interface",
+            "Common Language Interface",
+            "Common Language Input",
+            "Control Line Interface"
+        ],
+        "rightIndex": 0
+    },
+    {
+        "titulo": "What does \"LCD\" stand for?",
+        "respostas": [
+            "Language Control Design",
+            "Liquid Crystal Display",
+            "Long Continuous Design",
+            "Last Common Difference"
+        ],
+        "rightIndex": 1
+    },
+    {
+        "titulo": "Who is the original author of the realtime physics engine called PhysX?",
+        "respostas": [
+            "Nvidia",
+            "Ageia",
+            "AMD",
+            "NovodeX"
+        ],
+        "rightIndex": 3
+    },
+    {
+        "titulo": ".rs is the top-level domain for what country?",
+        "respostas": [
+            "Serbia",
+            "Rwanda",
+            "Romania",
+            "Russia"
+        ],
+        "rightIndex": 0
+    },
+    {
+        "titulo": "What is known as \"the brain\" of the Computer?",
+        "respostas": [
+            "Keyboard",
+            "Graphics Processing Unit",
+            "Motherboard",
+            "Central Processing Unit"
+        ],
+        "rightIndex": 3
+    },
+    {
+        "titulo": "Which data structure does FILO apply to?",
+        "respostas": [
+            "Queue",
+            "Heap",
+            "Stack",
+            "Tree"
+        ],
+        "rightIndex": 2
+    },
+    {
+        "titulo": "What does the term GPU stand for?",
+        "respostas": [
+            "Graphical Proprietary Unit",
+            "Graphics Processing Unit",
+            "Graphite Producing Unit",
+            "Gaming Processor Unit"
+        ],
+        "rightIndex": 1
+    },
+    {
+        "titulo": "America Online (AOL) started out as which of these online service providers?",
+        "respostas": [
+            "Quantum Link",
+            "CompuServe",
+            "GEnie",
+            "Prodigy"
+        ],
+        "rightIndex": 0
+    },
+    {
+        "titulo": "Which of these is not a key value of Agile software development?",
+        "respostas": [
+            "Responding to change",
+            "Comprehensive documentation",
+            "Individuals and interactions",
+            "Customer collaboration"
+        ],
+        "rightIndex": 1
+    },
+    {
+        "titulo": "What is the main CPU is the Sega Mega Drive / Sega Genesis?",
+        "respostas": [
+            "Yamaha YM2612",
+            "Zilog Z80",
+            "Intel 8088",
+            "Motorola 68000"
+        ],
+        "rightIndex": 3
+    },
+    {
+        "titulo": "This mobile OS held the largest market share in 2012.",
+        "respostas": [
+            "iOS",
+            "Android",
+            "Symbian",
+            "BlackBerry"
+        ],
+        "rightIndex": 0
+    },
+    {
+        "titulo": "What was the first company to use the term \"Golden Master\"?",
+        "respostas": [
+            "Apple",
+            "IBM",
+            "Google",
+            "Microsoft"
+        ],
+        "rightIndex": 0
+    },
+    {
+        "titulo": "Released in 2001, the first edition of Apple's Mac OS X operating system (version 10.0) was given what animal code name?",
+        "respostas": [
+            "Puma",
+            "Cheetah",
+            "Leopard",
+            "Tiger"
+        ],
+        "rightIndex": 1
+    },
+    {
+        "titulo": "The C programming language was created by this American computer scientist. ",
+        "respostas": [
+            "Tim Berners Lee",
+            "Willis Ware",
+            "al-Khw\u0101rizm\u012b",
+            "Dennis Ritchie"
+        ],
+        "rightIndex": 3
+    },
+    {
+        "titulo": "The name of technology company HP stands for what?",
+        "respostas": [
+            "Hellman-Pohl",
+            "Husker-Pollosk",
+            "Howard Packmann",
+            "Hewlett-Packard"
+        ],
+        "rightIndex": 3
+    },
+    {
+        "titulo": "What is the name given to layer 4 of the Open Systems Interconnection (ISO) model?",
+        "respostas": [
+            "Session",
+            "Transport",
+            "Data link",
+            "Network"
+        ],
+        "rightIndex": 1
+    },
+    {
+        "titulo": "What vulnerability ranked #1 on the OWASP Top 10 in 2013?",
+        "respostas": [
+            "Insecure Direct Object References",
+            "Injection ",
+            "Broken Authentication",
+            "Cross-Site Scripting"
+        ],
+        "rightIndex": 1
+    },
+    {
+        "titulo": "Approximately how many Apple I personal computers were created?",
+        "respostas": [
+            "200",
+            "100",
+            "500",
+            "1000"
+        ],
+        "rightIndex": 0
+    },
+    {
+        "titulo": "In programming, what do you call functions with the same name but different implementations?",
+        "respostas": [
+            "Inheriting",
+            "Abstracting",
+            "Overriding",
+            "Overloading"
+        ],
+        "rightIndex": 3
+    }
+]
