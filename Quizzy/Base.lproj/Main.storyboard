@@ -129,20 +129,100 @@ He is gonna ask you a few questions, and then simulate your rating. Are you read
             </objects>
             <point key="canvasLocation" x="469.56521739130437" y="308.70535714285711"/>
         </scene>
-        <!--View Controller-->
+        <!--Game Over View Controller-->
         <scene sceneID="rAc-iQ-bzr">
             <objects>
-                <viewController id="kwg-bi-zk9" sceneMemberID="viewController">
+                <viewController id="kwg-bi-zk9" customClass="GameOverViewController" customModule="Quizzy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="C5C-y5-3CW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.83912390470504761" green="0.83926850557327271" blue="0.83911478519439697" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="That was all" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="f9f-Yh-wck">
+                                <rect key="frame" x="40" y="53" width="334" height="35"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PC has estimated your grade" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="FU5-Sj-qdu">
+                                <rect key="frame" x="85" y="105.5" width="244.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You scored" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="cdo-yG-1If">
+                                <rect key="frame" x="123" y="155" width="168.5" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6/10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="35" translatesAutoresizingMaskIntoConstraints="NO" id="uqx-a2-t2F">
+                                <rect key="frame" x="123" y="193" width="168.5" height="79.5"/>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="70"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pcNormal" translatesAutoresizingMaskIntoConstraints="NO" id="OWE-Or-10h">
+                                <rect key="frame" x="86.5" y="401.5" width="241" height="279"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="OWE-Or-10h" secondAttribute="height" multiplier="482:558" id="sle-K0-6YJ"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffq-7z-j6N">
+                                <rect key="frame" x="40" y="797" width="334" height="45"/>
+                                <color key="backgroundColor" red="0.9813041090965271" green="0.9456515908241272" blue="0.90775328874588013" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="22"/>
+                                <state key="normal" title="Sure!">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onReplayPressed:" destination="kwg-bi-zk9" eventType="touchUpInside" id="LlD-SG-UWT"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="That was fun! Wanna play again?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VjF-dZ-llg">
+                                <rect key="frame" x="40" y="700.5" width="334" height="64.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.60987013578414917" green="0.80597919225692749" blue="0.72410023212432861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SPX-gq-RfU" firstAttribute="trailing" secondItem="f9f-Yh-wck" secondAttribute="trailing" constant="40" id="0Zs-gc-EaG"/>
+                            <constraint firstItem="VjF-dZ-llg" firstAttribute="top" secondItem="OWE-Or-10h" secondAttribute="bottom" constant="20" id="8mB-KS-8mW"/>
+                            <constraint firstItem="VjF-dZ-llg" firstAttribute="trailing" secondItem="ffq-7z-j6N" secondAttribute="trailing" id="Hdf-VL-Ik4"/>
+                            <constraint firstItem="FU5-Sj-qdu" firstAttribute="centerX" secondItem="f9f-Yh-wck" secondAttribute="centerX" id="Hyz-X5-Anp"/>
+                            <constraint firstItem="f9f-Yh-wck" firstAttribute="top" secondItem="SPX-gq-RfU" secondAttribute="top" multiplier="1.2" id="K73-Sm-wQ2"/>
+                            <constraint firstItem="VjF-dZ-llg" firstAttribute="leading" secondItem="ffq-7z-j6N" secondAttribute="leading" id="LSG-5p-GrH"/>
+                            <constraint firstItem="SPX-gq-RfU" firstAttribute="bottom" secondItem="ffq-7z-j6N" secondAttribute="bottom" constant="20" id="NTu-Nf-W7V"/>
+                            <constraint firstItem="ffq-7z-j6N" firstAttribute="top" secondItem="VjF-dZ-llg" secondAttribute="bottom" constant="32" id="Rb9-VJ-iQI"/>
+                            <constraint firstItem="ffq-7z-j6N" firstAttribute="height" secondItem="C5C-y5-3CW" secondAttribute="height" multiplier="0.05" id="Sla-wC-wVW"/>
+                            <constraint firstItem="FU5-Sj-qdu" firstAttribute="top" secondItem="f9f-Yh-wck" secondAttribute="bottom" multiplier="1.2" id="YC6-gG-4Qx"/>
+                            <constraint firstItem="SPX-gq-RfU" firstAttribute="trailing" secondItem="ffq-7z-j6N" secondAttribute="trailing" constant="40" id="cdx-UB-XKB"/>
+                            <constraint firstItem="uqx-a2-t2F" firstAttribute="centerX" secondItem="cdo-yG-1If" secondAttribute="centerX" id="fc4-Pe-9U5"/>
+                            <constraint firstItem="f9f-Yh-wck" firstAttribute="leading" secondItem="SPX-gq-RfU" secondAttribute="leading" constant="40" id="lTk-V2-tL9"/>
+                            <constraint firstItem="OWE-Or-10h" firstAttribute="centerX" secondItem="uqx-a2-t2F" secondAttribute="centerX" id="nhm-1B-k7R"/>
+                            <constraint firstItem="uqx-a2-t2F" firstAttribute="top" secondItem="cdo-yG-1If" secondAttribute="bottom" constant="-4" id="oxh-Ra-2Zj"/>
+                            <constraint firstItem="cdo-yG-1If" firstAttribute="centerX" secondItem="FU5-Sj-qdu" secondAttribute="centerX" id="pg3-DT-knA"/>
+                            <constraint firstItem="ffq-7z-j6N" firstAttribute="leading" secondItem="SPX-gq-RfU" secondAttribute="leading" constant="40" id="w3q-yH-ZeT"/>
+                            <constraint firstItem="cdo-yG-1If" firstAttribute="top" secondItem="FU5-Sj-qdu" secondAttribute="bottom" multiplier="1.2" id="wkd-Fy-0Vb"/>
+                            <constraint firstItem="uqx-a2-t2F" firstAttribute="width" secondItem="cdo-yG-1If" secondAttribute="width" id="zxQ-mg-VWu"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="SPX-gq-RfU"/>
                     </view>
+                    <connections>
+                        <outlet property="frasePcLabel" destination="VjF-dZ-llg" id="fpJ-ap-1jA"/>
+                        <outlet property="playAgainBtt" destination="ffq-7z-j6N" id="UHf-Xd-spl"/>
+                        <outlet property="scoreLabel" destination="uqx-a2-t2F" id="1dh-4R-mLp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5GT-Kp-vHY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1268" y="309"/>
+            <point key="canvasLocation" x="1266.6666666666667" y="308.70535714285711"/>
         </scene>
     </scenes>
     <resources>

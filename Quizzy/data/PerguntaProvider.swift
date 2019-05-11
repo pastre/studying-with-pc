@@ -11,14 +11,16 @@ import Foundation
 class PerguntaProvider{
     
     static let instance: PerguntaProvider = PerguntaProvider()
+    var nRounds: Int! = 0
+    var nQuestions: Int! = 10
     
-    let perguntas: [Pergunta] = {
+    var perguntas: [Pergunta] = {
         
         var perguntas:[Pergunta] = [Pergunta]()
 //        let titulos: [String] = ["a", "b", "c", "d"]
 //        let respostas: [[String]] = [["a", "b", "c", "d"], ["a1", "b1", "c1", "d1"], ["a2", "b2", "c2", "d2"], ["a3", "b3", "c3", "d3"], ]
     
-        if let path = Bundle.main.path(forResource: "dump", ofType: "json") { // TODO: Mudar esse nome
+        if let path = Bundle.main.path(forResource: "perguntas", ofType: "json") { // TODO: Mudar esse nome
             do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
                 let dicts = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves) as! NSArray
@@ -61,9 +63,14 @@ class PerguntaProvider{
     }
     
     func setupSingleton(){
+        self.perguntas.shuffle()
+        let mult = nRounds * nQuestions
+        let cut = nQuestions + mult - 1
+        print("Mult", mult, "Cut", cut)
         self.jaMostrou = [Pergunta]()
         self.acertadas = 0
-        self.aindaNaoMostrou = self.perguntas
+        self.aindaNaoMostrou = Array(self.perguntas[mult...cut])
+        print(aindaNaoMostrou.count)
         // Colocar coisas que podem ser legais aqui
         
     }

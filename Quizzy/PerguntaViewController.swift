@@ -62,7 +62,7 @@ class PerguntaViewController: UIViewController, OptionDelegate {
         super.viewDidLoad()
         self.setupViews()
         self.updateQuestion()
-        print("Loadou a view!")
+//        print("Loadou a view!")
         // Do any additional setup after loading the view.
     }
     
@@ -73,7 +73,7 @@ class PerguntaViewController: UIViewController, OptionDelegate {
             self.performSegue(withIdentifier: "onFinished", sender: nil)
             return
         }
-        print("Got a new question", newQuestion)
+//        print("Got a new question", newQuestion)
         self.currentQuestion = newQuestion
         self.optionsView.questions = self.currentQuestion.respostas
         self.optionsView.updatePerguntas()
@@ -88,7 +88,7 @@ class PerguntaViewController: UIViewController, OptionDelegate {
                 
                 view.transform = .identity
             }) { (_) in
-                print("Resetei as views")
+//                print("Resetei as views")
             }
         }
         
@@ -105,18 +105,13 @@ class PerguntaViewController: UIViewController, OptionDelegate {
         for view in self.optionsView.views{
             view.delegate = self
         }
-//        self.option1View.viewController = self
-//        self.option2View.viewController = self
-//        self.option3View.viewController = self
-//        self.option4View.viewController = self
-        
     }
     
     
     
     
     func handleOptionChanged(_ option: Int){
-        print("New option is ", option)
+//        print("New option is ", option)
         if self.currentQuestion.rightIndex == option{
             // acertou
             
@@ -126,14 +121,16 @@ class PerguntaViewController: UIViewController, OptionDelegate {
         
         self.updateQuestion()
     }
-        /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        let dest = segue.destination as! GameOverViewController
+        dest.perguntaViewController = self
     }
-    */
+ 
 
 }

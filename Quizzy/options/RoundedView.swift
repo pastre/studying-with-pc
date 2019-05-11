@@ -54,7 +54,7 @@ class RoundedView: UIView {
         self.setupNumberLabel()
         self.setupTitleLabel()
 //        self.setupShadow()
-        print("Instanciou")
+//        print("Instanciou")
     }
     
     func clear(){
@@ -75,7 +75,6 @@ class RoundedView: UIView {
     }
 
     @objc func handleTap(sender: UITapGestureRecognizer? = nil) {
-        print("Bateu")
         self.delegate?.onOptionSelected(new: self.optionId)
 //        self.viewController.handleOptionChanged(1)
     }
@@ -85,8 +84,9 @@ class RoundedView: UIView {
         let font =  UIFont.init(name: "Courier", size: 18)
 //        let font =  UIFont.systemFont(ofSize: 18, weight: .light)
         self.titleLabel.font = font
+        self.titleLabel.numberOfLines = 0
         self.addSubview(self.titleLabel)
-        self.titleLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: 10).isActive = true
+        self.titleLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10).isActive = true
         self.titleLabel.leftAnchor.constraint(equalTo: self.numberLabel.rightAnchor, constant: 10).isActive = true
         self.titleLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
 //        self.titleLabel.topAnchor.constraint(equalTo: self.numberLabel.topAnchor).isActive = true

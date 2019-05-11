@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D728EB052286EA81000FD4DA /* dump.json in Resources */ = {isa = PBXBuildFile; fileRef = D728EB042286EA81000FD4DA /* dump.json */; };
+		D728EB052286EA81000FD4DA /* perguntas.json in Resources */ = {isa = PBXBuildFile; fileRef = D728EB042286EA81000FD4DA /* perguntas.json */; };
+		D74F4C8D22870AF400D258CD /* GameOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74F4C8C22870AF400D258CD /* GameOverViewController.swift */; };
 		D76369D32284BC72002A1019 /* OptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76369D22284BC72002A1019 /* OptionsView.swift */; };
 		D774A3A82284A7CE0099283D /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D774A3A72284A7CE0099283D /* RoundedView.swift */; };
 		D783CD1E2282398C00FFADE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D783CD1D2282398C00FFADE5 /* AppDelegate.swift */; };
@@ -18,7 +19,7 @@
 		D783CD332282398F00FFADE5 /* QuizzyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D783CD322282398F00FFADE5 /* QuizzyTests.swift */; };
 		D783CD3E2282398F00FFADE5 /* QuizzyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D783CD3D2282398F00FFADE5 /* QuizzyUITests.swift */; };
 		D783CD4E22833D5D00FFADE5 /* Pergunta.swift in Sources */ = {isa = PBXBuildFile; fileRef = D783CD4D22833D5D00FFADE5 /* Pergunta.swift */; };
-		D783CD5222833E4C00FFADE5 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D783CD5122833E4C00FFADE5 /* Singleton.swift */; };
+		D783CD5222833E4C00FFADE5 /* PerguntaProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D783CD5122833E4C00FFADE5 /* PerguntaProvider.swift */; };
 		D783CD54228341EE00FFADE5 /* PerguntaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D783CD53228341EE00FFADE5 /* PerguntaViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D728EB042286EA81000FD4DA /* dump.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dump.json; sourceTree = "<group>"; };
+		D728EB042286EA81000FD4DA /* perguntas.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = perguntas.json; sourceTree = "<group>"; };
+		D74F4C8C22870AF400D258CD /* GameOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverViewController.swift; sourceTree = "<group>"; };
 		D76369D22284BC72002A1019 /* OptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsView.swift; sourceTree = "<group>"; };
 		D774A3A72284A7CE0099283D /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
 		D783CD1A2282398C00FFADE5 /* Quizzy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quizzy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,7 +59,7 @@
 		D783CD3D2282398F00FFADE5 /* QuizzyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzyUITests.swift; sourceTree = "<group>"; };
 		D783CD3F2282398F00FFADE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D783CD4D22833D5D00FFADE5 /* Pergunta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pergunta.swift; sourceTree = "<group>"; };
-		D783CD5122833E4C00FFADE5 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
+		D783CD5122833E4C00FFADE5 /* PerguntaProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerguntaProvider.swift; sourceTree = "<group>"; };
 		D783CD53228341EE00FFADE5 /* PerguntaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerguntaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,6 +88,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D74F4C8E22870C4E00D258CD /* options */ = {
+			isa = PBXGroup;
+			children = (
+				D774A3A72284A7CE0099283D /* RoundedView.swift */,
+				D76369D22284BC72002A1019 /* OptionsView.swift */,
+			);
+			path = options;
+			sourceTree = "<group>";
+		};
+		D74F4C8F22870C5F00D258CD /* data */ = {
+			isa = PBXGroup;
+			children = (
+				D728EB042286EA81000FD4DA /* perguntas.json */,
+				D783CD4D22833D5D00FFADE5 /* Pergunta.swift */,
+				D783CD5122833E4C00FFADE5 /* PerguntaProvider.swift */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
 		D783CD112282398C00FFADE5 = {
 			isa = PBXGroup;
 			children = (
@@ -109,18 +130,16 @@
 		D783CD1C2282398C00FFADE5 /* Quizzy */ = {
 			isa = PBXGroup;
 			children = (
-				D728EB042286EA81000FD4DA /* dump.json */,
 				D783CD1D2282398C00FFADE5 /* AppDelegate.swift */,
+				D783CD1F2282398C00FFADE5 /* ViewController.swift */,
 				D783CD53228341EE00FFADE5 /* PerguntaViewController.swift */,
+				D74F4C8C22870AF400D258CD /* GameOverViewController.swift */,
 				D783CD212282398C00FFADE5 /* Main.storyboard */,
 				D783CD242282398E00FFADE5 /* Assets.xcassets */,
 				D783CD262282398E00FFADE5 /* LaunchScreen.storyboard */,
 				D783CD292282398E00FFADE5 /* Info.plist */,
-				D783CD4D22833D5D00FFADE5 /* Pergunta.swift */,
-				D783CD5122833E4C00FFADE5 /* Singleton.swift */,
-				D783CD1F2282398C00FFADE5 /* ViewController.swift */,
-				D774A3A72284A7CE0099283D /* RoundedView.swift */,
-				D76369D22284BC72002A1019 /* OptionsView.swift */,
+				D74F4C8E22870C4E00D258CD /* options */,
+				D74F4C8F22870C5F00D258CD /* data */,
 			);
 			path = Quizzy;
 			sourceTree = "<group>";
@@ -250,7 +269,7 @@
 				D783CD282282398E00FFADE5 /* LaunchScreen.storyboard in Resources */,
 				D783CD252282398E00FFADE5 /* Assets.xcassets in Resources */,
 				D783CD232282398C00FFADE5 /* Main.storyboard in Resources */,
-				D728EB052286EA81000FD4DA /* dump.json in Resources */,
+				D728EB052286EA81000FD4DA /* perguntas.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,8 +298,9 @@
 				D774A3A82284A7CE0099283D /* RoundedView.swift in Sources */,
 				D783CD54228341EE00FFADE5 /* PerguntaViewController.swift in Sources */,
 				D76369D32284BC72002A1019 /* OptionsView.swift in Sources */,
+				D74F4C8D22870AF400D258CD /* GameOverViewController.swift in Sources */,
 				D783CD1E2282398C00FFADE5 /* AppDelegate.swift in Sources */,
-				D783CD5222833E4C00FFADE5 /* Singleton.swift in Sources */,
+				D783CD5222833E4C00FFADE5 /* PerguntaProvider.swift in Sources */,
 				D783CD4E22833D5D00FFADE5 /* Pergunta.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
