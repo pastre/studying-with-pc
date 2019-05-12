@@ -89,14 +89,14 @@ He is gonna ask you a few questions, and then simulate your rating. Are you read
                                 <rect key="frame" x="40" y="528.5" width="334" height="313.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SACA SO ESSA PERGUNTA MANEIRA IRMAO" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="6cv-Dw-Wqs">
-                                <rect key="frame" x="40" y="440.5" width="334" height="68"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SACA SO ESSA PERGUNTA MANEIRA IRMAO" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="6cv-Dw-Wqs">
+                                <rect key="frame" x="40" y="410.5" width="334" height="98"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pcThinking" translatesAutoresizingMaskIntoConstraints="NO" id="qZq-96-60y">
-                                <rect key="frame" x="86.5" y="84" width="241" height="316.5"/>
+                                <rect key="frame" x="86.5" y="54" width="241" height="316.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="qZq-96-60y" secondAttribute="height" multiplier="153:201" id="Snh-LC-Sjy"/>
                                 </constraints>
@@ -104,7 +104,7 @@ He is gonna ask you a few questions, and then simulate your rating. Are you read
                         </subviews>
                         <color key="backgroundColor" red="0.61000186204910278" green="0.80198156833648682" blue="0.72423189878463745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="qZq-96-60y" firstAttribute="top" secondItem="km7-f6-vv2" secondAttribute="top" constant="40" id="0bY-i9-vzv"/>
+                            <constraint firstItem="qZq-96-60y" firstAttribute="top" secondItem="km7-f6-vv2" secondAttribute="top" constant="10" id="1TA-ch-ydP"/>
                             <constraint firstItem="6cv-Dw-Wqs" firstAttribute="leading" secondItem="GBf-Fa-Oak" secondAttribute="leading" id="Ayt-fa-khq"/>
                             <constraint firstItem="qZq-96-60y" firstAttribute="centerX" secondItem="6cv-Dw-Wqs" secondAttribute="centerX" id="Flb-3W-nJu"/>
                             <constraint firstItem="km7-f6-vv2" firstAttribute="trailing" secondItem="GBf-Fa-Oak" secondAttribute="trailing" constant="40" id="ZTF-11-adt"/>
@@ -137,7 +137,7 @@ He is gonna ask you a few questions, and then simulate your rating. Are you read
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="That was all" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="f9f-Yh-wck">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congratulations!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="f9f-Yh-wck">
                                 <rect key="frame" x="40" y="53" width="334" height="35"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="35"/>
                                 <nil key="textColor"/>
@@ -183,7 +183,7 @@ He is gonna ask you a few questions, and then simulate your rating. Are you read
                                     <action selector="onReplayPressed:" destination="kwg-bi-zk9" eventType="touchUpInside" id="LlD-SG-UWT"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="That was fun! Wanna play again?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VjF-dZ-llg">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="That was fun! Wanna play again?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="VjF-dZ-llg">
                                 <rect key="frame" x="40" y="700.5" width="334" height="64.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="27"/>
                                 <nil key="textColor"/>
@@ -210,6 +210,7 @@ He is gonna ask you a few questions, and then simulate your rating. Are you read
                             <constraint firstItem="cdo-yG-1If" firstAttribute="centerX" secondItem="FU5-Sj-qdu" secondAttribute="centerX" id="pg3-DT-knA"/>
                             <constraint firstItem="ffq-7z-j6N" firstAttribute="leading" secondItem="SPX-gq-RfU" secondAttribute="leading" constant="40" id="w3q-yH-ZeT"/>
                             <constraint firstItem="cdo-yG-1If" firstAttribute="top" secondItem="FU5-Sj-qdu" secondAttribute="bottom" multiplier="1.2" id="wkd-Fy-0Vb"/>
+                            <constraint firstItem="OWE-Or-10h" firstAttribute="top" relation="greaterThanOrEqual" secondItem="uqx-a2-t2F" secondAttribute="bottom" constant="10" id="z3a-Si-4AE"/>
                             <constraint firstItem="uqx-a2-t2F" firstAttribute="width" secondItem="cdo-yG-1If" secondAttribute="width" id="zxQ-mg-VWu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="SPX-gq-RfU"/>
@@ -218,11 +219,86 @@ He is gonna ask you a few questions, and then simulate your rating. Are you read
                         <outlet property="frasePcLabel" destination="VjF-dZ-llg" id="fpJ-ap-1jA"/>
                         <outlet property="playAgainBtt" destination="ffq-7z-j6N" id="UHf-Xd-spl"/>
                         <outlet property="scoreLabel" destination="uqx-a2-t2F" id="1dh-4R-mLp"/>
+                        <segue destination="3Ud-Sr-Jmd" kind="presentation" identifier="modal" id="yoY-mb-dVF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5GT-Kp-vHY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1266.6666666666667" y="308.70535714285711"/>
+        </scene>
+        <!--Modal View Controller-->
+        <scene sceneID="DIL-MH-Gcx">
+            <objects>
+                <viewController modalPresentationStyle="overFullScreen" id="3Ud-Sr-Jmd" customClass="ModalViewController" customModule="Quizzy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i9j-EH-btx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tvT-tw-Mzd">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="xCT-0i-rVC">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <gestureRecognizers/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <outletCollection property="gestureRecognizers" destination="Mml-S7-Fzx" appends="YES" id="ttV-fP-MW0"/>
+                                    </connections>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bnC-7s-q84">
+                                <rect key="frame" x="0.0" y="717" width="414" height="179"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oh no! PC is out of questions!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vhL-QP-Acj">
+                                        <rect key="frame" x="93.5" y="68" width="227.5" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YHs-nN-SMc">
+                                        <rect key="frame" x="171.5" y="109" width="71" height="30"/>
+                                        <state key="normal" title="Play Again"/>
+                                        <connections>
+                                            <action selector="onRestartPressed:" destination="3Ud-Sr-Jmd" eventType="touchUpInside" id="bPR-HK-3gA"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="YHs-nN-SMc" secondAttribute="bottom" constant="40" id="TXW-3G-TAg"/>
+                                    <constraint firstItem="YHs-nN-SMc" firstAttribute="top" secondItem="vhL-QP-Acj" secondAttribute="bottom" constant="20" id="baF-vm-b70"/>
+                                    <constraint firstItem="YHs-nN-SMc" firstAttribute="centerX" secondItem="bnC-7s-q84" secondAttribute="centerX" id="dno-49-LzX"/>
+                                    <constraint firstItem="vhL-QP-Acj" firstAttribute="centerX" secondItem="bnC-7s-q84" secondAttribute="centerX" id="yru-to-mfq"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tvT-tw-Mzd" firstAttribute="leading" secondItem="oco-F8-ixC" secondAttribute="leading" id="2c5-JX-UDC"/>
+                            <constraint firstItem="bnC-7s-q84" firstAttribute="height" secondItem="i9j-EH-btx" secondAttribute="height" multiplier="0.2" id="WMu-El-jzQ"/>
+                            <constraint firstAttribute="bottom" secondItem="tvT-tw-Mzd" secondAttribute="bottom" id="Z9R-EZ-rgt"/>
+                            <constraint firstAttribute="bottom" secondItem="bnC-7s-q84" secondAttribute="bottom" id="a7I-qN-c6B"/>
+                            <constraint firstItem="oco-F8-ixC" firstAttribute="trailing" secondItem="bnC-7s-q84" secondAttribute="trailing" id="deA-yW-j2C"/>
+                            <constraint firstItem="oco-F8-ixC" firstAttribute="trailing" secondItem="tvT-tw-Mzd" secondAttribute="trailing" id="hJf-GH-7pL"/>
+                            <constraint firstItem="bnC-7s-q84" firstAttribute="leading" secondItem="oco-F8-ixC" secondAttribute="leading" id="oOM-Qu-X6Z"/>
+                            <constraint firstItem="tvT-tw-Mzd" firstAttribute="top" secondItem="i9j-EH-btx" secondAttribute="top" id="vxn-YD-Aeg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oco-F8-ixC"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hnq-6x-2PT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Mml-S7-Fzx">
+                    <connections>
+                        <action selector="onBlurPressed:" destination="3Ud-Sr-Jmd" id="bTe-DX-42U"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2316" y="309"/>
         </scene>
     </scenes>
     <resources>

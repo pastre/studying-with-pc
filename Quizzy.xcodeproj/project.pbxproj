@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		D728EB052286EA81000FD4DA /* perguntas.json in Resources */ = {isa = PBXBuildFile; fileRef = D728EB042286EA81000FD4DA /* perguntas.json */; };
 		D74F4C8D22870AF400D258CD /* GameOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74F4C8C22870AF400D258CD /* GameOverViewController.swift */; };
+		D74F4C912287191700D258CD /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74F4C902287191700D258CD /* ModalViewController.swift */; };
+		D74F4C932287338700D258CD /* LevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74F4C922287338700D258CD /* LevelView.swift */; };
+		D74F4C95228733BC00D258CD /* LevelBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74F4C94228733BC00D258CD /* LevelBarView.swift */; };
 		D76369D32284BC72002A1019 /* OptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76369D22284BC72002A1019 /* OptionsView.swift */; };
 		D774A3A82284A7CE0099283D /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D774A3A72284A7CE0099283D /* RoundedView.swift */; };
 		D783CD1E2282398C00FFADE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D783CD1D2282398C00FFADE5 /* AppDelegate.swift */; };
@@ -43,6 +46,9 @@
 /* Begin PBXFileReference section */
 		D728EB042286EA81000FD4DA /* perguntas.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = perguntas.json; sourceTree = "<group>"; };
 		D74F4C8C22870AF400D258CD /* GameOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverViewController.swift; sourceTree = "<group>"; };
+		D74F4C902287191700D258CD /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		D74F4C922287338700D258CD /* LevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelView.swift; sourceTree = "<group>"; };
+		D74F4C94228733BC00D258CD /* LevelBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelBarView.swift; sourceTree = "<group>"; };
 		D76369D22284BC72002A1019 /* OptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsView.swift; sourceTree = "<group>"; };
 		D774A3A72284A7CE0099283D /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
 		D783CD1A2282398C00FFADE5 /* Quizzy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quizzy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,6 +146,9 @@
 				D783CD292282398E00FFADE5 /* Info.plist */,
 				D74F4C8E22870C4E00D258CD /* options */,
 				D74F4C8F22870C5F00D258CD /* data */,
+				D74F4C902287191700D258CD /* ModalViewController.swift */,
+				D74F4C922287338700D258CD /* LevelView.swift */,
+				D74F4C94228733BC00D258CD /* LevelBarView.swift */,
 			);
 			path = Quizzy;
 			sourceTree = "<group>";
@@ -301,7 +310,10 @@
 				D74F4C8D22870AF400D258CD /* GameOverViewController.swift in Sources */,
 				D783CD1E2282398C00FFADE5 /* AppDelegate.swift in Sources */,
 				D783CD5222833E4C00FFADE5 /* PerguntaProvider.swift in Sources */,
+				D74F4C95228733BC00D258CD /* LevelBarView.swift in Sources */,
+				D74F4C912287191700D258CD /* ModalViewController.swift in Sources */,
 				D783CD4E22833D5D00FFADE5 /* Pergunta.swift in Sources */,
+				D74F4C932287338700D258CD /* LevelView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

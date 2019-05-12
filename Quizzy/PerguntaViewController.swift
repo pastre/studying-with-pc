@@ -48,28 +48,32 @@ class PerguntaViewController: UIViewController, OptionDelegate {
     
     @IBOutlet weak var optionsView: OptionsView!
     
-    //    @IBOutlet weak var option1View: RoundedView!
-//    @IBOutlet weak var option2View: RoundedView!
-//    @IBOutlet weak var option3View: RoundedView!
-//    @IBOutlet weak var option4View: RoundedView!
-//
     let provider: PerguntaProvider = PerguntaProvider.instance
     var currentQuestion: Pergunta!
-//    lazy var tapGesture: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.onTap(_:)))
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        self.setupViews()
-        self.updateQuestion()
 //        print("Loadou a view!")
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.setup()
+        print("Appeared!!")
+    }
+    
+    func setup(){
+        
+        self.setupViews()
+        self.updateQuestion()
+
+    }
 
     func updateQuestion(){
         guard let newQuestion = self.provider.getPergunta() else{
-            print("Deu ruim irmao")
+//            print("Deu ruim irmao")
             self.performSegue(withIdentifier: "onFinished", sender: nil)
             return
         }

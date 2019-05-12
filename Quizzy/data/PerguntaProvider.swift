@@ -13,6 +13,8 @@ class PerguntaProvider{
     static let instance: PerguntaProvider = PerguntaProvider()
     var nRounds: Int! = 0
     var nQuestions: Int! = 10
+//    var nQuestions: Int! = 3 // debugging
+    
     
     var perguntas: [Pergunta] = {
         
@@ -30,10 +32,11 @@ class PerguntaProvider{
                     perguntas.append(toAppend)
                 }
             } catch let error{
-                print("Error loading movies", error)
+                print("Error loading perguntas", error)
                 // handle error
             }
         }
+//        return Array(perguntas.prefix(12)) // debuggin
         return perguntas
     }()
     
@@ -62,15 +65,44 @@ class PerguntaProvider{
         return ret
     }
     
-    func setupSingleton(){
-        self.perguntas.shuffle()
-        let mult = nRounds * nQuestions
+    func hasMoreQuestions() -> Bool{
+        let ret =  self.nRounds < self.getLevelCount() - 1
+        print("More questions",self.nRounds , (self.perguntas.count / nQuestions) - 1, ret)
+        return ret
+    }
+    
+    func getLevelCount() -> Int{
+        return self.perguntas.count / self.nQuestions
+        
+    }
+    
+    func updateRound(){
+        if self.nRounds >= self.getLevelCount() - 1 { return }
+        self.nRounds += 1
+        self.acertadas = 0
+        self.updateQuestions()
+    }
+    
+    func updateQuestions(){
+        var mult = nRounds * nQuestions
         let cut = nQuestions + mult - 1
         print("Mult", mult, "Cut", cut)
+        
+        if mult == self.perguntas.count{
+            self.nRounds = 0
+            mult = nRounds * nQuestions
+        }
+        self.aindaNaoMostrou = Array(self.perguntas[mult...cut])
+    }
+    
+    func setupSingleton(){
+        self.perguntas.shuffle()
         self.jaMostrou = [Pergunta]()
         self.acertadas = 0
-        self.aindaNaoMostrou = Array(self.perguntas[mult...cut])
+        self.nRounds = 0
+        self.aindaNaoMostrou = [Pergunta]()
         print(aindaNaoMostrou.count)
+        self.updateQuestions()
         // Colocar coisas que podem ser legais aqui
         
     }

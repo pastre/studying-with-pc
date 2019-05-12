@@ -85,9 +85,10 @@ class RoundedView: UIView {
 //        let font =  UIFont.systemFont(ofSize: 18, weight: .light)
         self.titleLabel.font = font
         self.titleLabel.numberOfLines = 0
+        self.titleLabel.textAlignment = .left
         self.addSubview(self.titleLabel)
         self.titleLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10).isActive = true
-        self.titleLabel.leftAnchor.constraint(equalTo: self.numberLabel.rightAnchor, constant: 10).isActive = true
+        self.titleLabel.leadingAnchor.constraint(equalTo: self.numberLabel.trailingAnchor, constant: 1).isActive = true
         self.titleLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
 //        self.titleLabel.topAnchor.constraint(equalTo: self.numberLabel.topAnchor).isActive = true
 //        self.titleLabel.bottomAnchor.constraint(equalTo: self.numberLabel.bottomAnchor, constant: -10).isActive = true
@@ -96,9 +97,12 @@ class RoundedView: UIView {
     func setupNumberLabel(){
         let font = UIFont.init(name: "Courier", size: 18)
         self.numberLabel.font = font
+        self.numberLabel.numberOfLines = 0
+        self.numberLabel.textAlignment = .left
         self.addSubview(numberLabel)
-        self.numberLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20).isActive = true
+        self.numberLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 10).isActive = true
         self.numberLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
+        self.numberLabel.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 0.08).isActive = true
 //        self.numberLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 20).isActive = true
 //        self.numberLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 20).isActive = true
     }
