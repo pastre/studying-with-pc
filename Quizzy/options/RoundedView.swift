@@ -53,7 +53,7 @@ class RoundedView: UIView {
         self.addGestureRecognizer(tapGesture)
         self.setupNumberLabel()
         self.setupTitleLabel()
-//        self.setupShadow()
+        self.setupShadow()
 //        print("Instanciou")
     }
     
@@ -108,20 +108,30 @@ class RoundedView: UIView {
     }
     
     func setupShadow(){ // TODO: Nao ta funfando
-        self.layer.cornerRadius = 15
-        self.layer.masksToBounds = false
-        self.layer.shadowColor = UIColor.blue.cgColor
+//        self.layer.cornerRadius = 15
         
-        self.layer.shadowOpacity = 1
-        self.layer.shadowOffset = CGSize(width: 10, height: 10)
-        self.layer.shadowRadius = 15
-        self.layer.shadowPath = UIBezierPath(rect: self.bounds).cgPath
-        self.layer.shouldRasterize = true
+//        self.layer.shadowOffset =  CGSize(width: 0, height: 1)   // CGSizeMake(0, 1)
+//        self.layer.shadowColor = UIColor.black.cgColor
+//        self.layer.shadowRadius = 1.2
+//        self.layer.shadowOpacity = 0.65
+//        self.layer.cornerRadius = 1
+//        self.clipsToBounds = true
+//        self.layer.masksToBounds = false
+//        self.layer.masksToBounds = false
+//        
+//        self.layer.masksToBounds = false
+//        self.layer.shadowColor = UIColor.blue.cgColor
+//
+//        self.layer.shadowOpacity = 1
+//        self.layer.shadowOffset = CGSize(width: 10, height: 10)
+//        self.layer.shadowRadius = 15
+//        self.layer.shadowPath = UIBezierPath(rect: self.bounds).cgPath
+//        self.layer.shouldRasterize = true
     }
     
     override func layoutSubviews() {
         self.backgroundColor = self.bgColor
-        self.layer.cornerRadius = 10
+//        self.layer.cornerRadius = 10
     }
     
     /*
